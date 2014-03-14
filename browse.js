@@ -28,7 +28,7 @@ var browserDetect = function() {
 
     //判断最新版360，不可靠
     function is360() {
-        for (var i = 0, len = navigator.plugins.length; i <= len; i++) {
+        for (var i = 0, len = navigator.plugins.length; i < len; i++) {
             if (navigator.plugins[i].name == 'fancy3d') {
                 return true;
             }
